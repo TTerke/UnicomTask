@@ -369,7 +369,7 @@ def monthOneG(username):
     ## 联通活动 不需要登录
     url = f'https://wap.10010hb.net/zinfo/activity/mobilePrize/getAward?serialNumber={username}'
     #每月3号领取
-    if day==3:
+    if day==23:
         award = client.post(url,'{}')
         award.encoding = 'utf-8'
         res = award.json()
